@@ -1,0 +1,3 @@
+-- Capa 1.0: DDL de las tablas de aplicacion.
+-- users, investor_profiles, alert_subscriptions, pipeline_runs y ohlc_candles (ver 3.6).
+-- TODO: implementar.

@@ -1,0 +1,3 @@
+-- Capa 1.5a (opcional): triggers que bloquean UPDATE/DELETE/TRUNCATE sobre
+-- fct_forecasts (ver 4.7.2). Va aparte de schema.sql porque la tabla la crea dbt.
+-- TODO: implementar.

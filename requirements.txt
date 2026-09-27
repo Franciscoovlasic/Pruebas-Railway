@@ -1,0 +1,12 @@
+# Se van sumando a medida que se implementa cada capa.
+requests  # tools/probe_binance_hosts.py y tools/verify_binance_mirror.py (T2/T8, 8.0)
+# pandas
+# pydantic
+# pydantic-settings
+# sqlalchemy
+# psycopg2-binary
+# tenacity
+# dbt-postgres
+# scikit-learn        # solo para 1.5c (train_random_forest.py)
+# pytest
+# pytest-mock

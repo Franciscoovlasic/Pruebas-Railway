@@ -1,0 +1,15 @@
+# Capa 1.6: config del servicio cron de Railway. Reemplaza a pipeline.yml
+# (antes en .github/workflows/): el cron horario (extraccion -> dbt run ->
+# dbt test -> pronostico -> alertas) lo dispara el scheduler nativo de
+# contenedores de Railway (decision D1), no GitHub Actions.
+# GitHub Actions se mantiene para CI, el entrenamiento semanal de ML
+# (train-ml-forecast.yml) y los workflows manuales (backfill.yml,
+# monitor-binance-host.yml, probe-*.yml).
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile.pipeline"
+
+[deploy]
+startCommand = "python -m src.pipeline"
+cronSchedule = "5 * * * *"

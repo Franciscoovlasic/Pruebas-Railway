@@ -1,0 +1,20 @@
+# Capa 1.0 (esqueleto). Se completa a medida que se construyen los modelos.
+name: 'pipeline_elt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'pipeline_elt'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+
+models:
+  pipeline_elt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

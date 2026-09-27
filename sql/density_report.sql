@@ -1,0 +1,3 @@
+-- Capa 1.2: densidad por mes y huecos interiores (LEAD()) sobre ohlc_candles.
+-- Una sola consulta, reutilizada por el panel admin (2.6).
+-- TODO: implementar.
