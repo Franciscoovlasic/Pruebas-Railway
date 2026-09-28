@@ -12,4 +12,4 @@ dockerfilePath = "Dockerfile.pipeline"
 
 [deploy]
 startCommand = "python -m src.pipeline"
-cronSchedule = "5 * * * *"
+cronSchedule = "5 /2 * * *"
