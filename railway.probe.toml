@@ -1,0 +1,7 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile.probe"
+
+[deploy]
+startCommand = "python tools/probe_binance_hosts.py"
+cronSchedule = "0 */2 * * *"
